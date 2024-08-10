@@ -684,8 +684,8 @@
 					<p>We value people over profits, quality over quantity, and keeping it real. As such, we deliver an unmatched working relationship with our clients.</p>
 					<p>Our team is intentionally small, eclectic, and skilled; with our in-house expertise, we provide sharp, comfortable, and affordable apparal for all ages</p>
 					<ul class="social">
-						<li><a href="https://www.instagram.com/richdogapparel/" ><i class="fa fa-twitter"></i></a></li>
-						<li><a href="javascript:void(0);" ><i class="fa fa-facebook"></i></a></li>
+						<h4><b>Socials</b></h4>
+						<li><a href="https://www.instagram.com/richdogapparel/" ><img src="images/insta.png"></img></a></li>
 					</ul>
 				</div>
 				
@@ -693,17 +693,25 @@
 				
 				<div class="col-lg-4 col-md-4 padbot30">
 					<h4><b>Contacts</b> Us</h4>
+
+					<h2>By Email</h2>
 					
-					<!-- CONTACT FORM -->
+					<!-- CONTACT FORM TODO: add functionality to send an email to trey-->
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
 							<form id="contact-form-face" class="clearfix" action="#">
-								<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
+								<input type="text" name="from_name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" id="emailText" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Message</textarea>
 								<input class="contact_btn" type="submit" value="Send message" />
 							</form>
 						</div>
+
+					<h2>By Phone</h2>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+						<p>563-258-1296</p>
+					</div>
 					</div><!-- //CONTACT FORM -->
 				</div>
 			</div><!-- //ROW -->
@@ -718,5 +726,30 @@
 	</div><!-- //MAP -->
 
 </div>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+	(function () {
+		// https://dashboard.emailjs.com/admin/account
+		emailjs.init({
+			publicKey: "JMqcmTAi_82-_1KRs",
+		});
+	})();
+</script>
+<script type="text/javascript">
+	window.onload = function () {
+		document.getElementById('contact-form-face').addEventListener('submit', function (event) {
+			event.preventDefault();
+			// these IDs from the previous steps
+			emailjs.sendForm('contact_service', 'contact_form', this)
+				.then(() => {
+					console.log('SUCCESS!');
+				}, (error) => {
+					console.log('FAILED...', error);
+				});
+		});
+	}
+</script>
 </body>
 </html>
