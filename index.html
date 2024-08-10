@@ -36,6 +36,29 @@
 	<script src="js/animate.js" type="text/javascript"></script>
 	<script src="js/jquery.BlackAndWhite.js"></script>
 	<script src="js/myscript.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			// https://dashboard.emailjs.com/admin/account
+			emailjs.init({
+				publicKey: "JMqcmTAi_82-_1KRs",
+			});
+		})();
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('contact-form-face').addEventListener('submit', function (event) {
+				event.preventDefault();
+				// these IDs from the previous steps
+				emailjs.sendForm('contact_service', 'contact_form', this)
+					.then(() => {
+						window.location.reload();
+					}, (error) => {
+						console.log('FAILED...', error);
+					});
+			});
+		}
+	</script>
 	<script>
 		
 		//PrettyPhoto
@@ -105,7 +128,7 @@
 							<ul>
 								<li class="first active scroll_btn"><a href="#home" >Home</a></li>
 								<li class="scroll_btn"><a href="#about" >About Us</a></li>
-								<li class="scroll_btn"><a href="#projects" >Projects</a></li>
+								<li class="scroll_btn"><a href="#projects" >Featured Apparal</a></li>
 								<li class="scroll_btn"><a href="#team" >Team</a></li>
 								<li class="scroll_btn"><a href="#news" >News</a></li>
 								<li class="scroll_btn last"><a href="#contacts" >Contacts</a></li>
@@ -138,7 +161,6 @@
 							<p class="title3 captionDelay6 FromTop">Here</p>
 							<p class="title4 captionDelay7 FromBottom">This is where you can have any information in to show initially.</p>
 						</div>
-						<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>
 					<li class="slide2">
 						<div class="flex_caption1">
 							<p class="title1 captionDelay6 FromLeft">Another</p>
@@ -146,7 +168,6 @@
 							<p class="title3 captionDelay2 FromLeft">Here</p>
 							<p class="title4 captionDelay7 FromLeft">This is where you can have any information in to show initially.</p>
 						</div>
-						<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>
 					</li>
 					<li class="slide3">
 						<div class="flex_caption1">
@@ -709,7 +730,7 @@
 
 					<h2>By Phone</h2>
 
-					<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<div class="foot_about_block">
 						<p>563-258-1296</p>
 					</div>
 					</div><!-- //CONTACT FORM -->
@@ -727,29 +748,5 @@
 
 </div>
 
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-	(function () {
-		// https://dashboard.emailjs.com/admin/account
-		emailjs.init({
-			publicKey: "JMqcmTAi_82-_1KRs",
-		});
-	})();
-</script>
-<script type="text/javascript">
-	window.onload = function () {
-		document.getElementById('contact-form-face').addEventListener('submit', function (event) {
-			event.preventDefault();
-			// these IDs from the previous steps
-			emailjs.sendForm('contact_service', 'contact_form', this)
-				.then(() => {
-					console.log('SUCCESS!');
-				}, (error) => {
-					console.log('FAILED...', error);
-				});
-		});
-	}
-</script>
 </body>
 </html>
