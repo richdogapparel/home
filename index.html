@@ -117,11 +117,7 @@
 					</div><!-- //LOGO -->
 					
 					<!-- SEARCH FORM TODO: Implement a search feature-->
-					<div id="search-form" class="pull-right">
-						<form method="get" action="#">
-							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
-						</form>
-					</div><!-- SEARCH FORM -->
+					<!-- SEARCH FORM -->
 					
 					<!-- MENU -->
 					<div class="pull-right">
@@ -182,9 +178,28 @@
 			</div>
 			<div id="carousel">
 				<ul class="slides">
-					<li><img src="images/RichDog/hat1.jpg" alt="" /></li>
-					<li><img src="images/RichDog/hat2.jpeg" alt="" /></li>
-					<li><img src="images/RichDog/hat5.jpeg" alt="" /></li>
+					<li>
+						<picture>
+							<source media="(min-width: 650px)" srcset="images/RichDog/hat1.jpg">
+							<source media="(min-width: 465px)" srcset="images/RichDog/mobilehat.jpg">
+							<img src="images/RichDog/hat1.jpg" alt="">
+						</picture>
+
+					</li>
+					<li>
+						<picture>
+							<source media="(min-width: 650px)" srcset="images/RichDog/hat2.jpeg">
+							<source media="(min-width: 465px)" srcset="images/kitten-sitting.png">
+							<img src="images/RichDog/hat2.jpeg" alt="">
+						</picture>
+					</li>
+					<li>
+						<picture>
+							<source media="(min-width: 650px)" srcset="images/RichDog/hat5.jpeg">
+							<source media="(min-width: 465px)" srcset="images/kitten-sitting.png">
+							<img src="images/RichDog/hat5.jpeg" alt="">
+						</picture>
+					</li>
 				</ul>
 			</div><!-- //TOP SLIDER -->
 		</section><!-- //HOME -->
