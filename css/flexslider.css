@@ -534,16 +534,16 @@ html[xmlns] .slides {display: block;}
 	.top_slider .slide_btn {padding:15px 20px 15px 5px; width:auto; left:auto; right:15px; margin:0;}
 	.top_slider .slide_btn:before {right:5px; font-size:18px; top:-7px;}
 
-		.top_slider .slide1 {
-			background-image: url(/images/RichDog/mobile1.jpg);
+	.top_slider .slide1 {
+			background-image: url(../images/RichDog/mobile1.jpg);
 		}
 	
-		.top_slider .slide2 {
-			background-image: url(/images/RichDog/mobile2.jpeg);
+	.top_slider .slide2 {
+			background-image: url(../images/RichDog/mobile2.jpeg);
 		}
 	
-		.top_slider .slide3 {
-			background-image: url(/images/RichDog/mobile3.jpeg);
+	.top_slider .slide3 {
+			background-image: url(../images/RichDog/mobile3.jpeg);
 		}
 
 
@@ -556,17 +556,18 @@ html[xmlns] .slides {display: block;}
 	
 	#carousel {display:none;}
 
-		.top_slider .slide1 {
-			background-image: url(/images/RichDog/mobile1.jpg);
+	.top_slider .slide1 {
+			background-image: url(../images/RichDog/mobile1.jpg);
 		}
 	
-		.top_slider .slide2 {
-			background-image: url(/images/RichDog/mobile2.jpeg);
+	.top_slider .slide2 {
+			background-image: url(../images/RichDog/mobile2.jpeg);
 		}
 	
-		.top_slider .slide3 {
-			background-image: url(/images/RichDog/mobile3.jpeg);
+	.top_slider .slide3 {
+			background-image: url(../images/RichDog/mobile3.jpeg);
 		}
+
 }
 
 
