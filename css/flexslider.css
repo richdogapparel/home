@@ -311,20 +311,19 @@ html[xmlns] .slides {display: block;}
 
 /* Caption */
 .top_slider .slide1 {
-	height: 100vh;
-	display: flex;
+	height: 100%;
 	background-image:url(../images/RichDog/hat1background.jpg);
-	background-size:contain;
-	background-attachment:fixed !important;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .top_slider .slide1 .flex_caption1 {
 	position:absolute;
-	display: flex;
 	z-index:30;
 	left:50%;
 	top:45%;
-	width: 100vw;
+	width:100%;
 	margin-left:-585px;
 	color:#ffffff;
 	transform: translateY(-50%);
@@ -340,20 +339,19 @@ html[xmlns] .slides {display: block;}
 
 
 .top_slider .slide2 {
-	height: 100vh;
-	display: flex;
+	height:100%;
 	background-image:url(../images/RichDog/hat2background.jpeg);
-	background-size:contain;
-	background-attachment:fixed !important;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .top_slider .slide2 .flex_caption1 {
 	position:absolute;
-	display: flex;
 	z-index:30;
 	left:50%;
 	top:45%;
-	width: 100vw;
+	width:100%;
 	margin-left:-585px;
 	color:#fff;
 	transform: translateY(-50%);
@@ -368,20 +366,20 @@ html[xmlns] .slides {display: block;}
 
 
 .top_slider .slide3 {
-	height: 100vh;
-	display: flex;
+	height:100%;
 	background-image:url(../images/RichDog/hat5background.jpeg);
 	background-repeat:no-repeat;
-	background-size:contain;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .top_slider .slide3 .flex_caption1 {
 	position:absolute;
-	display: flex;
 	z-index:30;
 	left:50%;
 	top:45%;
-	width: 100vw;
+	width:100%;
 	margin-left:-585px;
 	color:#ffffff;
 	transform: translateY(-50%);
@@ -513,7 +511,7 @@ html[xmlns] .slides {display: block;}
 	
 	.top_slider .slide1 .flex_caption1 .title4, .top_slider .slide2 .flex_caption1 .title4, .top_slider .slide3 .flex_caption1 .title4 {font-size:17px; line-height:24px; width:450px;}
 	
-	
+	.top_slider .slide1 {height: 75px; width: 75px;}
 }
 
 @media (max-width: 767px) {
@@ -537,7 +535,10 @@ html[xmlns] .slides {display: block;}
 	.top_slider .slide_btn {padding:15px 20px 15px 5px; width:auto; left:auto; right:15px; margin:0;}
 	.top_slider .slide_btn:before {right:5px; font-size:18px; top:-7px;}
 	
-	
+	.top_slider .slide1 {
+			height: 50px;
+			width: 50px;
+		}
 }
 
 @media (max-width: 479px) {
@@ -547,7 +548,10 @@ html[xmlns] .slides {display: block;}
 	
 	#carousel {display:none;}
 	
-	
+		.top_slider .slide1 {
+			width: 25px;
+			height: 25px;
+		}
 }
 
 
