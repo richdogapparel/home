@@ -185,7 +185,7 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 }
 .btn:focus, .btn:hover {color:#333; border-color:#333;}
 
-.btn-active {background-color:#1c1c1c; color:#fff; border-color:#1c1c1c;}
+.btn-active {background-color:#888888; color:#fff; border-color:#1c1c1c;}
 .btn-active:hover {color:#fff;}
 
 
@@ -617,7 +617,7 @@ header {
 	font-weight: 900;
 	line-height:20px;
 	font-size:13px;
-	color:#1C1C1C;
+	color:#888888;
 	transition: all 0.3s ease-in-out; 
 	-webkit-transition: all 0.3s ease-in-out;
 }
@@ -630,7 +630,7 @@ header {
 }
 .purpose_block .btn-active:hover span,
 .purpose_block .btn-active:focus span {
-	color:#1c1c1c;
+	color:#888888;
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	transform: translateY(-100%);
@@ -823,9 +823,9 @@ ul.project_info li span {color:#979797;}
 .crewman_item .crewman_descr {
 	position:absolute;
 	z-index:20;
-	left:0;
+	left: 0px;
 	top:0;
-	width:100%;
+	width:100.3%;
 	height:100%;
 	text-align:center;
 	opacity:0;
@@ -1082,7 +1082,7 @@ footer {
 	bottom:0;
 	left:50%;
 	opacity:0;
-	width:100%;
+	width:100.3%;
 	padding:60px 0 10px;
 	color:#999;
 	background-color:#1c1c1c;
@@ -1197,11 +1197,11 @@ input[type="text"] {
 	font-weight:400;
 	line-height:20px;
 	font-size: 12px;
-	color: #333;
+	color: #888888;
 	font-style:normal;
 	border-radius: 0;	
 	background: none;
-	border: 2px solid #242424;
+	border: 2px solid #888888;
 	box-shadow: none;
 	transition: border-color 0.3s ease-in-out; 
 	-webkit-transition: border-color 0.3s ease-in-out;
@@ -1243,7 +1243,7 @@ input[type="color"]:focus {
 	cursor:pointer;
 	margin: 0 7px 10px 0;
 	padding:13px 30px;
-	border: 2px solid #242424;
+	border: 2px solid #888888;
 	border-radius: 0;
 	box-shadow: 0;
 	text-shadow:none;
@@ -1253,7 +1253,7 @@ input[type="color"]:focus {
 	font-weight:900;
 	line-height:20px;
 	font-size:13px;
-	color:#333;
+	color:#888888;
 	background: none; 
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
