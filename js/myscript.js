@@ -144,7 +144,9 @@ jQuery(document).ready(function () {
 
 function homeHeight() {
   var wh = jQuery(window).height() - 80;
+  var width = jQuery(window).width();
   jQuery(".top_slider, .top_slider .slides li").css("height", wh);
+  jQuery(".top_slider, .slides li").css("width", width);
 }
 
 /*-----------------------------------------------------------------------------------*/
