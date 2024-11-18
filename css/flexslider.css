@@ -497,21 +497,21 @@ html[xmlns] .slides {display: block;}
 
 /* Responsive Styles */
 @media (min-width: 992px) and (max-width: 1199px) {
-	.top_slider .slide1 .flex_caption1, .top_slider .slide2 .flex_caption1, .top_slider .slide3 .flex_caption1 {background-image: url(/images/RichDog/bluecoozie.jpeg);margin-left:-485px;}
+	.top_slider .slide1 .flex_caption1, .top_slider .slide2 .flex_caption1, .top_slider .slide3 .flex_caption1 {margin-left:-485px;}
 	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide1 .flex_caption1 .title2, .top_slider .slide1 .flex_caption1 .title3, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title3, .top_slider .slide3 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title3 {font-size:70px; line-height:70px;}
 	.top_slider .slide_btn {margin-left:314px;}
-	
 	
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.top_slider .slide1 .flex_caption1, .top_slider .slide2 .flex_caption1, .top_slider .slide3 .flex_caption1 {background-image: url(/images/RichDog/bluecoozie.jpeg);margin-left:-375px;}
+	.top_slider .slide1 .flex_caption1, .top_slider .slide2 .flex_caption1, .top_slider .slide3 .flex_caption1 {margin-left:-375px;}
 	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide1 .flex_caption1 .title2, .top_slider .slide1 .flex_caption1 .title3, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title3, .top_slider .slide3 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title3 {font-size:60px; line-height:60px;}
 	.top_slider .slide_btn {margin-left:204px;}
 	
 	.top_slider .slide1 .flex_caption1 .title4, .top_slider .slide2 .flex_caption1 .title4, .top_slider .slide3 .flex_caption1 .title4 {font-size:17px; line-height:24px; width:450px;}
 	
 	.top_slider .slide1 {height: 75px; width: 75px;}
+
 }
 
 @media (max-width: 767px) {
@@ -534,27 +534,39 @@ html[xmlns] .slides {display: block;}
 	.top_slider .slide_btn {padding:15px 20px 15px 5px; width:auto; left:auto; right:15px; margin:0;}
 	.top_slider .slide_btn:before {right:5px; font-size:18px; top:-7px;}
 
-	.top_slider .slide1{
-		background-image: url(/images/RichDog/mobile1.jpg);
-	}
-
-	.top_slider .slide2 {
-		background-image: url(/images/RichDog/mobile2.jpeg);
-	}
-
-	.top_slider .slide3 {
+		.top_slider .slide1 {
+			background-image: url(/images/RichDog/mobile1.jpg);
+		}
+	
+		.top_slider .slide2 {
+			background-image: url(/images/RichDog/mobile2.jpeg);
+		}
+	
+		.top_slider .slide3 {
 			background-image: url(/images/RichDog/mobile3.jpeg);
-	}
+		}
+
 
 }
 
 @media (max-width: 479px) {
-	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide1 .flex_caption1 .title2, .top_slider .slide1 .flex_caption1 .title3, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title3, .top_slider .slide3 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title3 {background-position: right; font-size:26px; line-height:26px;}
+	.top_slider .slide1 .flex_caption1 .title1, .top_slider .slide1 .flex_caption1 .title2, .top_slider .slide1 .flex_caption1 .title3, .top_slider .slide2 .flex_caption1 .title1, .top_slider .slide2 .flex_caption1 .title2, .top_slider .slide2 .flex_caption1 .title3, .top_slider .slide3 .flex_caption1 .title1, .top_slider .slide3 .flex_caption1 .title2, .top_slider .slide3 .flex_caption1 .title3 { font-size:26px; line-height:26px;}
 	
 	.top_slider .slide1 .flex_caption1 .title4, .top_slider .slide2 .flex_caption1 .title4, .top_slider .slide3 .flex_caption1 .title4 {width:290px;}
 	
 	#carousel {display:none;}
 
+		.top_slider .slide1 {
+			background-image: url(/images/RichDog/mobile1.jpg);
+		}
+	
+		.top_slider .slide2 {
+			background-image: url(/images/RichDog/mobile2.jpeg);
+		}
+	
+		.top_slider .slide3 {
+			background-image: url(/images/RichDog/mobile3.jpeg);
+		}
 }
 
 
