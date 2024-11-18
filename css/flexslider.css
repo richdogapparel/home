@@ -314,8 +314,9 @@ html[xmlns] .slides {display: block;}
 	height: 100%;
 	background-image:url(../images/RichDog/hat1background.jpg);
 	background-size:cover;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .top_slider .slide1 .flex_caption1 {
@@ -342,8 +343,9 @@ html[xmlns] .slides {display: block;}
 	height:100%;
 	background-image:url(../images/RichDog/hat2background.jpeg);
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .top_slider .slide2 .flex_caption1 {
@@ -370,8 +372,9 @@ html[xmlns] .slides {display: block;}
 	background-image:url(../images/RichDog/hat5background.jpeg);
 	background-repeat:no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .top_slider .slide3 .flex_caption1 {
