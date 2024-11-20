@@ -1,10 +1,12 @@
 var fixed_menu = true;
 window.jQuery = window.$ = jQuery;
 
-var myScreenOrientation = window.screen.orientation;
-if ($(window).width() < 768) {
-  myScreenOrientation.lock("portrait");
-}
+jQuery(window).load(function () {
+  var myScreenOrientation = window.screen.orientation;
+  if ($(window).width() < 768) {
+    myScreenOrientation.lock("portrait");
+  }
+});
 
 /*-----------------------------------------------------------------------------------*/
 /*	PRELOADER
@@ -75,6 +77,8 @@ jQuery(document).ready(function () {
       jQuery("header .navmenu").slideToggle(300);
     });
   }
+
+  // TODO: why does the hamburger menu not show up on hats and coozies pages
 
   // if single_page
   if (jQuery("#page").hasClass("single_page")) {
