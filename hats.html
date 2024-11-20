@@ -28,25 +28,20 @@
 	
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
 	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
 	<script src="js/superfish.min.js" type="text/javascript"></script>
 	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/animate.js" type="text/javascript"></script>
 	<script src="js/myscript.js" type="text/javascript"></script>
-	<script>
-		jQuery(document).ready(function () {
-			//MobileMenu
-			if ($(window).width() < 768) {
-				jQuery(".menu_block .container").prepend(
-					'<a href="javascript:void(0)" class="menu_toggler"><span class="fa fa-align-justify"></span></a>'
-				);
-				jQuery("header .navmenu").hide();
-				jQuery(".menu_toggler, .navmenu ul li a").click(function () {
-					jQuery("header .navmenu").slideToggle(300);
-				});
-			}
-		})
+	<script type="text/javascript">
+		(function () {
+			// https://dashboard.emailjs.com/admin/account
+			emailjs.init({
+				publicKey: "JMqcmTAi_82-_1KRs",
+			});
+		})();
 	</script>
 	
 </head>
