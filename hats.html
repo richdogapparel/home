@@ -46,16 +46,11 @@
 	
 </head>
 <style>
-	body {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 0px;
+		gap: 1px;
+		column-gap: 1px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -76,7 +71,8 @@
 	}
 
 	.caption {
-		margin-top: 8px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		font-size: 14px;
 		font-weight: bold;
 		color: #000000;
@@ -84,7 +80,6 @@
 		padding-right: 120px;
 	}
 
-	/* On getting mobile view image and text in the center of the colomn */
 
 	/* Responsive design for smaller screens */
     @media (max-width: 767px) {

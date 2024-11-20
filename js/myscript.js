@@ -1,6 +1,11 @@
 var fixed_menu = true;
 window.jQuery = window.$ = jQuery;
 
+var myScreenOrientation = window.screen.orientation;
+if ($(window).width() < 768) {
+  myScreenOrientation.lock("portrait");
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	PRELOADER
 /*-----------------------------------------------------------------------------------*/
