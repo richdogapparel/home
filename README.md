@@ -6,3 +6,4 @@ Known Problems:
 
   - Mobile View orientation
   - Spacing issues based on the size of the screen
+  - Hamburger Icon not appearing on hats and koozies subpages
