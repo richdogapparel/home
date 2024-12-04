@@ -6,4 +6,11 @@ Known Problems:
 
   - Mobile View orientation
   - Spacing issues based on the size of the screen
-  - Hamburger Icon not appearing on hats and koozies subpages
+  - Hamburger Icon not appearing on hats and koozies subpages on mobile view
+  - Some grammatical errors (Home page and footer missing a period & check all others)
+
+TODO:
+
+  -  Add more pictures to hats and koozie subpages
+  -  Add templates for more apparel in the future (T-shirt, sweatshirt, etc.)
+  -  Update home page pictures to include newly released apparel
